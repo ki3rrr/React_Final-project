@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "book-management-system",
   "private": true,
   "version": "1.0.0",
+=======
+  "name": "book-library-system",
+  "version": "1.0.0",
+  "private": true,
+>>>>>>> d15ca21e626a7f3b9fe7d08e50982ced96e46128
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +17,11 @@
   "dependencies": {
     "lucide-vue-next": "^0.468.0",
     "vue": "^3.5.13",
+<<<<<<< HEAD
     "vue-router": "^4.5.0"
+=======
+    "vue-router-dom": "^1.0.0-beta.1"
+>>>>>>> d15ca21e626a7f3b9fe7d08e50982ced96e46128
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

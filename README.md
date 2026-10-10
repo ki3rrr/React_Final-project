@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PageTurn — Book Management System
 
 A responsive Vue 3 library management project for learning form handling, events, parent-child communication, Vue Router, Composition API, Options API, mixins, composables, localStorage, and CRUD.
@@ -22,11 +23,31 @@ A responsive Vue 3 library management project for learning form handling, events
 6. Open the local URL printed in the terminal (usually `http://localhost:5173`).
 
 For a production build:
+=======
+# Book Library System (Vue 3)
+
+A responsive front-end library dashboard inspired by the supplied reference. This is a classroom-ready demo using localStorage, sample data, and browser-only persistence. It does not require a database or API.
+
+## Requirements
+- Node.js 20.19+ or 22.12+ recommended
+- npm
+
+## Run the project
+```bash
+# 1. Extract the ZIP, then open a terminal inside Book-Library-System
+npm install
+npm run dev
+```
+Open the local URL printed by Vite (usually `http://localhost:5173`).
+
+## Production build
+>>>>>>> d15ca21e626a7f3b9fe7d08e50982ced96e46128
 ```bash
 npm run build
 npm run preview
 ```
 
+<<<<<<< HEAD
 ## Demo accounts
 - Admin: `admin@pageturn.local` / `admin123`
 - Member: `member@pageturn.local` / `member123`
@@ -107,3 +128,34 @@ If you want to reset the demo data, open browser DevTools → Application/Storag
 - Signing out clears the saved session and redirects straight to the login page.
 - Added four Ethics books and four Avengers / superhero comic titles to the demo catalog.
 - Newly added seed titles are merged into existing local storage without replacing books the user has already edited or added.
+=======
+## Included features
+- Dashboard metrics: total books, borrowing users, borrowed books, overdue books
+- Physical Books / Online Books tabs
+- Search and status/category filters
+- Add, view, edit, and delete books
+- Borrow and return actions with due dates
+- Form validation and confirmation messages
+- Responsive sidebar and book-card layout
+- localStorage persistence (refreshing the page keeps your changes)
+- Component events (`defineEmits`) and parent/child communication (`props`, emitted events, `v-model`)
+- Vue 3 Composition API in the app and Options API example component
+- Reusable composables and a small legacy-style mixin example
+
+## Where to look
+- `src/App.vue`: application shell and parent-level state
+- `src/components/BookCard.vue`: child component using props and emitted events
+- `src/components/BookFormModal.vue`: add/edit form and validation
+- `src/components/BookDetailsModal.vue`: details and borrow/return actions
+- `src/components/SidebarNav.vue`: emits navigation changes
+- `src/composables/useLibrary.js`: library state and localStorage persistence
+- `src/composables/useToast.js`: reusable toast state
+- `src/mixins/auditMixin.js`: small Options API mixin example
+- `src/components/OptionsApiExample.vue`: demonstrates Options API alongside Composition API
+
+## Notes
+- Sample books are seeded automatically only when no saved library data exists.
+- Use **Reset demo data** in the sidebar to restore the initial sample data.
+- Data is stored in this browser on this device. Clearing browser storage clears saved changes.
+- This is a front-end learning project, not a secure multi-user production system. Real authentication, server-side validation, database transactions, and role permissions would need a backend.
+>>>>>>> d15ca21e626a7f3b9fe7d08e50982ced96e46128
